@@ -18,6 +18,11 @@ def create_database():
             
             # Commit the transaction
             connection.commit()
+
+    except mysql.connector.Error as err:
+        # Handle specific MySQL connector error
+        print(f"MySQL Error: {err}")
+        
     except Error as e:
         print(f"Error:{e}")
     finally:
