@@ -14,6 +14,6 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
     TABLE_SCHEMA = 'alx_book_store'  -- Specify the database name
-    AND TABLE_NAME = 'books'         -- Specify the table name
+    AND COLUMN_TYPE", "TABLE_NAME = 'Books'         -- Specify the table name
 ORDER BY 
     ORDINAL_POSITION;                -- Order by the column position in the table
